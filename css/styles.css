@@ -84,10 +84,14 @@ img.self-img{
   margin: 100px auto 100px auto;
   text-align: left;
 } 
-.technical-skills, .projects, .language, .introduction{
+.technical-skills, .projects, .language, .introduction, .hometown{
   width: 50%;
   margin: 100px auto 100px auto;
   text-align: left;
+}
+
+.hometown p{
+  line-height: 2;
 }
 
 

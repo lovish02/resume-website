@@ -8,11 +8,17 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
 </head>
 
+<script type="text/javascript">
+	function validateForm(){
+		alert("Form Submitted Successfully!!");
+	}
+</script>
+
 <body>
   <div class="top-container">
     <div class="title-text">
       <h1>I'm Lovish</h1>
-      <h2>a programmer</h2>
+      <h2>a programmer.</h2>
     </div>
     <img class = "self-img" src="images/Lovish.jpg" alt="">
   </div>
@@ -83,9 +89,24 @@
     </div>
 
     <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <a class="btn" href="mailto:lovish.agrawal@walchandsangli.ac.in">CONTACT ME</a>
+
+    <div class = "contact-me">
+    	<h2>Contact Me</h2>
+    	<form autocomplete="off" onsubmit="validateForm()" name = "myform">
+    		<label for="fname">First Name</label>
+	    	<input type="text" id="fname" name = "fname" placeholder="First Name">
+	    	<br>
+	    	<label for="lname">Last Name</label>
+	    	<input type="text" id="lname" name = "lname" placeholder="Last Name">
+	    	<br>
+	    	<label for = "email">Email</label>
+	    	<input type="text" id="email" name = "email" placeholder="Email">
+	    	<br>
+	    	<label for="msg">Message</label>
+	    	<textarea id = "msg" rows = 5 name = "msg" placeholder="Message"></textarea>
+	    	<button type="submit" class = "btn">Submit</button>
+	   	</form>
+    	
     </div>
   </div>
 
@@ -93,7 +114,9 @@
   <div class="bottom-container">
     <p class="copyright">© 2021 Lovish Agrawal</p>
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
+
 
